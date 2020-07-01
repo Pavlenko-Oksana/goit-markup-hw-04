@@ -13,6 +13,8 @@
 --footer-background-color:#2F303A;
 --accent-color:#2196F3;
 --accent-color-white:#FFFFFF;
+--customers-logo: #AFB1B8;
+
 
 }
 body{ 
@@ -51,6 +53,9 @@ a{
   display: flex;
   align-items: center;
 }
+
+
+
 /* logo */
 .logo{
  color: var(--primary-text-color);
@@ -172,11 +177,33 @@ color:var(--secondary-text-color);
 .header-address{
   margin-left: auto;
 }
+
+.header-mail{
+  display: flex;
+  text-align: center;
+}
+
+.header-tel{
+  display: flex;
+  text-align: center;
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus{
+  fill: var(--accent-color);
+}
+
 /* section */
 .section-paragraph,
 .section-profession,
 .section-customer{
  color:var(--secondary-text-color);
+}
+
+.advantage-img{
+ background-color: var(--secondary-background-color);
 }
 
 .qualities{
@@ -186,10 +213,6 @@ color:var(--secondary-text-color);
 
 .qualities .qualities-img:not(:last-child){
   margin-left: 30px;
-}
-
-.qualities-img{
-  margin-bottom: 30px;
 }
 
 .qualities-name{
@@ -236,6 +259,18 @@ color: #212121;
   margin-bottom: 20px;
 }
 
+.customers-logo{
+  width: 170px;
+  height: 190px;
+  fill: var(--customers-logo);
+  border: 2px;
+}
+
+.customers-logo:hover,
+.customers-logo:focus{
+fill: var(--accent-color);
+}
+
 .about-team{
   display: flex;
   
@@ -251,6 +286,7 @@ color: #212121;
   margin-top: 0px;
   margin-bottom: 50px;
 }
+
 .team-name{
   margin-top: 0px;
   margin-bottom: 10px;
@@ -294,10 +330,68 @@ color: #212121;
  background-color: var(--secondary-background-color);
 }
 
+.team-icon{
+  display: flex;
+ text-align: center;
+} 
+
+.team-icon-img:not(:last-child){
+margin-right: 34px;
+}
+
+.team-icon-img{
+  height: 44px;
+  width: 44px;
+}
+
+.team-icon-image{
+  fill: var(--customers-logo);
+  height: 20px;
+  width: 20px;
+}
+
+.team-icon-link{
+  display: flex;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  width: 44px;
+  height: 44px;
+}
+
+.team-icon-link:hover{
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.team-icon-image:hover{
+fill: var(--accent-color-white);
+background-color: var(--accent-color);
+border-radius: 50%;
+}
+
+.regular-customers-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: 2px solid var(--customers-logo);
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.regular-customers-logo:hover{
+  border-color: var(--accent-color);
+  
+}
+
 .regular-customers{
   display: flex;
- 
+  
 }
+
 .regular-customers .item:not(:last-child){
  margin-right: 30px;
 }
@@ -374,6 +468,25 @@ margin-bottom: 8px;
   color: var(--accent-color-white);
 }
 
+.footer-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-link{
+  padding: 0px;
+  border: none;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-ikon-img{
+  fill: var(--customers-logo);
+}
 
 /* button */
 .button{
