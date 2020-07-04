@@ -36,25 +36,22 @@ a{
 
 
 .conainer{
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  ;
 }
 
 .main-nav{
   display: flex;
   align-items: center;
 }
+
 .header-nav{
   display: flex;
   align-items: center;
 }
-
-
 
 /* logo */
 .logo{
@@ -69,7 +66,6 @@ a{
  color: var(--accent-color);
 }
 
- 
 
 /* hero */
 .button-hero{
@@ -182,17 +178,17 @@ color:var(--secondary-text-color);
   margin-right: 10px;
 }
 
-.header-mail{
+.contacts-nav .header-mail{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-tel{
+.contacts-nav .header-tel{
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  
 }
 
 .header-mail:hover,
@@ -202,7 +198,7 @@ color:var(--secondary-text-color);
   fill: var(--accent-color);
 }
 
-/* section */
+/* section*/
 .section-paragraph,
 .section-profession,
 .section-customer{
@@ -239,6 +235,9 @@ color:var(--secondary-text-color);
   }
 
 .advantage-img-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary-background-color);
   height: 120px;
   
@@ -273,23 +272,14 @@ line-height: 1.58;
 }
 
 
+
+
 .section-name{
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
-}
-
-
-.section-name{
-  margin-top: 0px;
-  margin-bottom: 4px;
-}
-
-.section-customer{
-  margin-top: 0px;
-  margin-bottom: 20px;
 }
 
 .customers-logo{
@@ -407,13 +397,11 @@ margin-right: 34px;
 
 .regular-customers-logo:hover{
   border-color: var(--accent-color);
-  
 }
 
 .regular-customers{
   display: flex;
 }
-
 
 .regular-logo:not(:last-child){
   margin-right: 30px;
@@ -422,6 +410,7 @@ margin-right: 34px;
 .filter-button{
  display: flex;
  justify-content: center;
+
  }
 
 .filter-button .item:not(:last-child){
@@ -444,6 +433,33 @@ margin-right: 34px;
 
 .gallery .item:nth-last-child(-n+3){
   margin-bottom: 0px;
+}
+
+.section-name{
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.section-customer{
+  margin-top: 0px;
+  margin-bottom: 20px
+}
+
+.section-paragraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 71px;
+  padding-bottom: 55px;
+  width: 370px;
+  height: 295px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
 }
 
 /* footer */
@@ -539,7 +555,9 @@ margin-bottom: 8px;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  
   }
+
 .button:hover,
 .button:focus{
  background-color:var(--accent-color);
